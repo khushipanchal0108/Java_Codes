@@ -1,24 +1,34 @@
 # Java_Codes
+
+PART I: INPUTS USING DIFFERENT METHODS
+
+This Java console application demonstrates various methods for reading user input and calculating the factorial of a number. It showcases different Java classes for input handling and includes a utility class for performing the calculation.
+
+Classes Overview:
+ScannerClass: Uses the Scanner class to read an integer from the console and calculate its factorial.
+ConsoleLogInput: Utilizes the Console class for reading user input, including sensitive data like passwords, and calculates the factorial of a number.
+CommandLine: Demonstrates using command-line arguments to perform factorial calculations.
+BufferReader: Implements BufferedReader and InputStreamReader to read text input from the console for factorial calculation.
+InputStream: Attempts to use InputStream for input handling, but conceptually requires correction for functionality.
+Factorial: Contains the logic for calculating the factorial of a number, used across different input methods.
+
+The application provides a practical exploration of Java's input handling mechanisms, offering a varied approach to receiving and processing user input for a common mathematical operation. It serves as an educational tool for understanding basic input/output operations in Java.
+
+PART II: CALCULATOR
+
 This repository contains a Java console application for performing simple math calculations. It includes classes for input handling, performing calculations, and managing the application flow.
 
+This Java application calculates various mathematical operations based on user input. It consists of classes for input collection, calculation, and application flow management.
+
 Classes:
-1. Input
-This class is used for taking two numbers from the user. It uses a Scanner to read the numbers entered by the user and stores them in an array.
-- inputNumbers(): Asks the user to enter two numbers, reads them, and returns them as an array of doubles.
+Input: Uses Scanner to prompt for and read two numbers, returning them as a double array.
 
-2. Calculator
-This class contains methods for various math operations like addition, subtraction, multiplication, division, square root, power, mean, and variance.
-- addition(double n1, double n2): Returns the sum of two numbers.
-- subtraction(double n1, double n2): Returns the difference between two numbers.
-- multiplication(double n1, double n2): Returns the product of two numbers.
-- division(double n1, double n2): Returns the quotient of two numbers. Throws an exception if dividing by zero.
-- sqrt(double n): Returns the square root of a number.
-- power(double base, double exponent): Returns the result of raising a base to an exponent.
-- mean(double[] numbers): Calculates and returns the average of an array of numbers.
-- variance(double[] numbers): Calculates and returns the variance of an array of numbers. It prints a message and returns NaN if there's insufficient data.
+inputNumbers(): Reads two numbers from the user and returns them.
+Calculator: Performs math operations like addition, subtraction, multiplication, division, square root, power, mean, and variance.
 
-3. Main
-This is the entry point of the application. It uses a Scanner to read user input, creates a Calculator object for performing operations, and manages the application flow through a loop that allows users to perform multiple operations until they decide to exit.
-- The main method displays a menu of operations, reads the user's choice, and uses the Calculator object to perform the selected operation. It then displays the result and asks the user if they want to perform another operation.
+Operations include addition, subtraction, multiplication, division (with zero-division check), sqrt, power, mean, and variance, handling appropriate calculations and edge cases.
+Main: The application's entry point, managing the flow and performing calculations based on user input.
 
-The application is designed to be user-friendly, prompting the user for input and choices, and providing results based on those choices.
+Displays a menu, reads choices, performs calculations using Calculator, and displays results, looping until exit.
+
+The application is designed for ease of use, with clear prompts and immediate feedback on calculations.
